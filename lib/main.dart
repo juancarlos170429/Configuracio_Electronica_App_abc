@@ -1,5 +1,7 @@
 import 'package:conf_elect_app/conf_elect.dart';
+import 'package:conf_elect_app/drawer_all.dart';
 import 'package:conf_elect_app/elemento.dart';
+import 'package:conf_elect_app/leyenda.dart';
 import 'package:conf_elect_app/lista_elementos.dart';
 import 'package:flutter/material.dart';
 
@@ -12,18 +14,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-      ),
+
       home: Scaffold(
 
           backgroundColor: Colors.green[200],
           appBar: AppBar(
             backgroundColor: Colors.green,
-            title:Center(
-              child:Text("Lista de Elementos ",),)
+            title:Text("Lista de Elementos ",)
           ),
-          body:
+        drawer: DrawerAll(),
+        body:
           ListaElementos(),
       ),
     );

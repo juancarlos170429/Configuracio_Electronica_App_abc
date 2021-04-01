@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.abc.conf_elect_app">
    <application
-        android:label="conf_elect_app"
+        android:label="Conf. Electronica"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

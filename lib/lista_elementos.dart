@@ -29,35 +29,258 @@ class ListaElementos extends StatelessWidget{
           }, // Handle your callback
           child: Center(child:Elemento("4,0","2","He","-","HELIO",Colors.yellow[300],Colors.red)),
         ),
-
-        Center(child:Elemento("6.941","3","Li","1","LITIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("9,012","4","Be","2","BERILIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("10,81","5","B","3","BORO",Colors.orangeAccent,Colors.black)),
-        Center(child:Elemento("12,0","6","C","±4,3,2","CARBONO",Colors.yellow[300],Colors.black)),
-        Center(child:Elemento("14,0","7","N","±3,2,4,5","NITROGENO",Colors.yellow[300],Colors.red)),
-        Center(child:Elemento("16,0","8","O","±2,-1,-1/2","OXIGENO",Colors.yellow[300],Colors.red)),
-        Center(child:Elemento("19,0","9","F","-1","FLUOR",Colors.yellow[300],Colors.red)),
-        Center(child:Elemento("20,18","10","Ne","-","NEON",Colors.yellow[300],Colors.red)),
-        Center(child:Elemento("23,0","11","Na","1","SODIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("24,3","12","Mg","2","MAGNESIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("27,0","13","Al","3","ALUMINIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("28,09","14","Si","±4","SILICIO",Colors.orangeAccent,Colors.black)),
-        Center(child:Elemento("31,0","15","P","±3,1,5","FOSFORO",Colors.yellow[300],Colors.black)),
-        Center(child:Elemento("32,07","16","S","±2,4,6","AZUFRE",Colors.yellow[300],Colors.black)),
-        Center(child:Elemento("35,453","17","Cl","±1,3,5,7","CLORO",Colors.yellow[300],Colors.red)),
-        Center(child:Elemento("40,0","18","Ar","-","ARGON",Colors.yellow[300],Colors.red)),
-        Center(child:Elemento("39,1","19","K","1","POTASIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("40,1","20","Ca","2","CALCIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("45,0","21","Sc","3","ESCANDIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("47,867","22","Ti","4,3,2","TITANIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("50,94","23","Va","5,4,3,2","VANADIO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("52,0","24","Cr","6,3,2","CROMO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("54,94","25","Mn","7,6,4,3,2","MANGANESO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("55,84","26","Fe","6,3,2","HIERRO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("58,93","27","Co","4,3,2","COBALTO",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("58,69","28","Ni","2,3","NIQUEL",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("63,55","29","Cu","2,1","COBRE",Colors.blue[200],Colors.black)),
-        Center(child:Elemento("65,41","30","Zn","2","ZINC",Colors.blue[200],Colors.black)),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("6.941","3","Li","1","LITIO",Colors.blue[200],Colors.black,"I-A","2","s","1s2 2s1")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("6.941","3","Li","1","LITIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("9,012","4","Be","2","BERILIO",Colors.blue[200],Colors.black,"II-A","2","s","1s2 2s2")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("9,012","4","Be","2","BERILIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("10,81","5","B","3","BORO",Colors.orangeAccent,Colors.black,"III-A","2","p","1s2 2s2 2p1")),
+            );
+          }, // Handle your callback
+          child:  Center(child:Elemento("10,81","5","B","3","BORO",Colors.orangeAccent,Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("12,0","6","C","±4,3,2","CARBONO",Colors.yellow[300],Colors.black,"IV-A","2","p","1s2 2s2 2p2")),
+            );
+          }, // Handle your callback
+          child:  Center(child:Elemento("12,0","6","C","±4,3,2","CARBONO",Colors.yellow[300],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("14,0","7","N","±3,2,4,5","NITROGENO",Colors.yellow[300],Colors.red,"V-A","2","p","1s2 2s2 2p3")),
+            );
+          }, // Handle your callback
+          child:  Center(child:Elemento("14,0","7","N","±3,2,4,5","NITROGENO",Colors.yellow[300],Colors.red)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("16,0","8","O","±2,-1,-1/2","OXIGENO",Colors.yellow[300],Colors.red,"VI-A","2","p","1s2 2s2 2p4")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("16,0","8","O","±2,-1,-1/2","OXIGENO",Colors.yellow[300],Colors.red)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("19,0","9","F","-1","FLUOR",Colors.yellow[300],Colors.red,"VII-A","2","p","1s2 2s2 2p5")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("19,0","9","F","-1","FLUOR",Colors.yellow[300],Colors.red)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("20,18","10","Ne","-","NEON",Colors.yellow[300],Colors.red,"VIII-A","2","p","1s2 2s2 2p6")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("20,18","10","Ne","-","NEON",Colors.yellow[300],Colors.red)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("23,0","11","Na","1","SODIO",Colors.blue[200],Colors.black,"I-A","3","s","1s2 2s2 2p6 3s1")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("23,0","11","Na","1","SODIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("24,3","12","Mg","2","MAGNESIO",Colors.blue[200],Colors.black,"II-A","3","s","1s2 2s2 2p6 3s2")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("24,3","12","Mg","2","MAGNESIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("27,0","13","Al","3","ALUMINIO",Colors.blue[200],Colors.black,"III-A","3","p","1s2 2s2 2p6 3s2 3p1")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("27,0","13","Al","3","ALUMINIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("28,09","14","Si","±4","SILICIO",Colors.orangeAccent,Colors.black,"IV-A","3","p","1s2 2s2 2p6 3s2 3p2")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("28,09","14","Si","±4","SILICIO",Colors.orangeAccent,Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("31,0","15","P","±3,1,5","FOSFORO",Colors.yellow[300],Colors.black,"V-A","3","p","1s2 2s2 2p6 3s2 3p3")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("31,0","15","P","±3,1,5","FOSFORO",Colors.yellow[300],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("32,07","16","S","±2,4,6","AZUFRE",Colors.yellow[300],Colors.black,"VI-A","3","p","1s2 2s2 2p6 3s2 3p4")),
+            );
+          }, // Handle your callback
+          child: Center(child:Elemento("32,07","16","S","±2,4,6","AZUFRE",Colors.yellow[300],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("35,453","17","Cl","±1,3,5,7","CLORO",Colors.yellow[300],Colors.red,"VII-A","3","p","1s2 2s2 2p6 3s2 3p5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("35,453","17","Cl","±1,3,5,7","CLORO",Colors.yellow[300],Colors.red)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("40,0","18","Ar","-","ARGON",Colors.yellow[300],Colors.red,"VIII-A","3","p","1s2 2s2 2p6 3s2 3p6")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("40,0","18","Ar","-","ARGON",Colors.yellow[300],Colors.red)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("39,1","19","K","1","POTASIO",Colors.blue[200],Colors.black,"I-A","4","s","1s2 2s2 2p6 3s2 3p6 4s1 ")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("39,1","19","K","1","POTASIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("40,1","20","Ca","2","CALCIO",Colors.blue[200],Colors.black,"II-A","4","s","1s2 2s2 2p6 3s2 3p6 4s2 ")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("40,1","20","Ca","2","CALCIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("45,0","21","Sc","3","ESCANDIO",Colors.blue[200],Colors.black,"III-B","4","d","1s2 2s2 2p6 3s2 3p6 3d1 4s2")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("45,0","21","Sc","3","ESCANDIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("47,867","22","Ti","4,3,2","TITANIO",Colors.blue[200],Colors.black,"IV-B","4","d","1s2 2s2 2p6 3s2 3p6 3d2 4s2")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("47,867","22","Ti","4,3,2","TITANIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("50,94","23","Va","5,4,3,2","VANADIO",Colors.blue[200],Colors.black,"V-B","4","d","1s2 2s2 2p6 3s2 3p6 3d3 4s2")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("50,94","23","Va","5,4,3,2","VANADIO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("52,0","24","Cr","6,3,2","CROMO",Colors.blue[200],Colors.black,"VI-B","4","d","1s2 2s2 2p6 3s2 3p6 3d5 4s1")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("52,0","24","Cr","6,3,2","CROMO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("54,94","25","Mn","7,6,4,3,2","MANGANESO",Colors.blue[200],Colors.black,"VII-B","4","d","1s2 2s2 2p6 3s2 3p6 4s2 3d5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("54,94","25","Mn","7,6,4,3,2","MANGANESO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("55,84","26","Fe","6,3,2","HIERRO",Colors.blue[200],Colors.black,"VII-B","4","dss","1s2 2s2 2p6 3s2 3p6 4s2 3d5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("55,84","26","Fe","6,3,2","HIERRO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("58,93","27","Co","4,3,2","COBALTO",Colors.blue[200],Colors.black,"VII-B","4sssss","dss","1s2 2s2 2p6 3s2 3p6 4s2 3d5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("58,93","27","Co","4,3,2","COBALTO",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("58,69","28","Ni","2,3","NIQUEL",Colors.blue[200],Colors.black,"VII-B","4sssss","dss","1s2 2s2 2p6 3s2 3p6 4s2 3d5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("58,69","28","Ni","2,3","NIQUEL",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("63,55","29","Cu","2,1","COBRE",Colors.blue[200],Colors.black,"VII-B","4sssss","dss","1s2 2s2 2p6 3s2 3p6 4s2 3d5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("63,55","29","Cu","2,1","COBRE",Colors.blue[200],Colors.black)),
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => new SecondRoute("65,41","30","Zn","2","ZINC",Colors.blue[200],Colors.black,"VII-B","4sssss","dss","1s2 2s2 2p6 3s2 3p6 4s2 3d5")),
+            );
+          }, // Handle your callback
+          child:Center(child:Elemento("65,41","30","Zn","2","ZINC",Colors.blue[200],Colors.black)),
+        ),
         Center(child:Elemento("69,72","31","Ga","2,3","GALIO",Colors.blue[200],Colors.black)),
         Center(child:Elemento("72,64","32","Ge","±4,2","GERMANIO",Colors.orangeAccent,Colors.black)),
         Center(child:Elemento("74,92","33","As","±3,5","ARSENICO",Colors.orangeAccent,Colors.black)),
