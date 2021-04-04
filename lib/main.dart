@@ -10,7 +10,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
+  _searchBar(){
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child:  TextField(
+        decoration: InputDecoration(
+            hintText: "Buscar..."
+        ),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,8 +32,10 @@ class MyApp extends StatelessWidget {
             title:Text("Lista de Elementos ",)
           ),
         drawer: DrawerAll(),
-        body:
-          ListaElementos(),
+        body:ListaElementos(),
+
+
+
       ),
     );
   }

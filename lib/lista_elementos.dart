@@ -6,11 +6,13 @@ import 'package:flutter/material.dart';
 class ListaElementos extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return GridView.count(
 
       crossAxisCount: 3,
       children:[
+
         InkWell(
           onTap: () {
             Navigator.push(
