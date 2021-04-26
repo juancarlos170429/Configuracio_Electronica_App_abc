@@ -240,18 +240,29 @@ class _ListaBuscarState extends State<ListaBuscar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.green[100],
+        backgroundColor: Color.fromARGB(255, 159, 237, 157),
         body: Column(
           children: [
             Card(
-              color: Colors.green[100],
+              color: Color.fromARGB(255, 159, 237, 157),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Stack(alignment: Alignment(1.0, 1.0), children: [
                   TextField(
                       decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Buscar',
+                        border: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.green, width: 5.0),
+                          borderRadius: BorderRadius.circular(35),
+                        ),
+                        labelText: '   Buscar',
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(35),
+                          borderSide: BorderSide(
+                            color: Colors.green[500],
+                            width: 2.0,
+                          ),
+                        ),
                       ),
                       style: TextStyle(
                         fontSize: 15,

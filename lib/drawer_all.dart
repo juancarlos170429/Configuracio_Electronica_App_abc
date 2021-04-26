@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 import 'leyenda.dart';
-import 'lista_elementos.dart';
-class DrawerAll extends StatelessWidget{
+
+class DrawerAll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
       width: 300.0,
-      color: Colors.green[100],
+      color: Color.fromARGB(255, 159, 237, 157),
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-              decoration:BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.green,
               ),
               child: Stack(children: <Widget>[
@@ -24,25 +24,20 @@ class DrawerAll extends StatelessWidget{
                             color: Colors.white,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w500))),
-              ])
-          ),
-
+              ])),
           ListTile(
             leading: Icon(Icons.book),
             title: Text("Leyenda"),
-            onTap: (){
+            onTap: () {
               Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Leyenda()));
+                  context, MaterialPageRoute(builder: (context) => Leyenda()));
             },
           ),
           ListTile(
-
             title: Text("V0.0.1"),
           ),
         ],
       ),
     );
   }
-
 }

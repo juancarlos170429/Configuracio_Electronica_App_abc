@@ -101,7 +101,7 @@ class ConfElect extends StatelessWidget {
     );
     // TODO: implement build
     return Container(
-      decoration: new BoxDecoration(color: Colors.green[200]),
+      decoration: new BoxDecoration(color: Color.fromARGB(255, 159, 237, 157)),
       margin: const EdgeInsets.only(top: 22.0),
       child: Column(
         children: [

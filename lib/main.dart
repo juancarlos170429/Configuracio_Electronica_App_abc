@@ -3,7 +3,6 @@ import 'package:conf_elect_app/drawer_all.dart';
 import 'package:conf_elect_app/elemento.dart';
 import 'package:conf_elect_app/leyenda.dart';
 import 'package:conf_elect_app/lista_buscar.dart';
-import 'package:conf_elect_app/lista_elementos.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,15 +10,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  _searchBar() {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: TextField(
-        decoration: InputDecoration(hintText: "Buscar..."),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
