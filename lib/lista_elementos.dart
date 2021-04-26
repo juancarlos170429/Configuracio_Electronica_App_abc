@@ -9,6 +9,8 @@ class ListaElementos extends StatelessWidget {
     // TODO: implement build
     return GridView.count(
       crossAxisCount: 3,
+      crossAxisSpacing: 20,
+      mainAxisSpacing: 10,
       children: [
         InkWell(
           onTap: () {
