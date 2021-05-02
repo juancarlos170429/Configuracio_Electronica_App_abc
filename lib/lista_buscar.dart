@@ -12,7 +12,7 @@ class _ListaBuscarState extends State<ListaBuscar> {
   List<Elementos> lista;
   List<Elementos> listaBusqueda;
   final TextEditingController input = TextEditingController(text: '');
-
+  bool mostrarBusqueda = true;
   @override
   void initState() {
     // TODO: implement initState
@@ -875,6 +875,15 @@ class _ListaBuscarState extends State<ListaBuscar> {
     return _color;
   }
 
+  void _buscar() {
+    setState(() {
+      listaBusqueda = lista
+          .where((elemento) =>
+              elemento.nombre.indexOf(input.text.toUpperCase()) >= 0)
+          .toList();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -907,25 +916,27 @@ class _ListaBuscarState extends State<ListaBuscar> {
                       ),
                       controller: input,
                       onChanged: (String valor) {
-                        buscar(valor);
-                        if (valor.length > 0) {
-                          //IconButton(icon: Icon(Icons.search));
-                          Eliminar = "1";
-                          //si entra
-                        } else {
-                          Eliminar = "0";
-                        }
+                        setState(() {
+                          buscar(valor);
+                          //dprint(' se cambio el texto del imput');
+                          if (valor.trim() != "") {
+                            mostrarBusqueda = false;
+                          } else {
+                            mostrarBusqueda = true;
+                          }
+                        });
                       }),
-                  IconButton(
-                      icon: Eliminar == "1"
-                          ? Icon(Icons.close_outlined)
-                          : Icon(Icons.search_rounded),
-                      onPressed: Eliminar == "1"
-                          ? () {
+                  mostrarBusqueda
+                      ? IconButton(icon: Icon(Icons.search), onPressed: _buscar)
+                      : IconButton(
+                          icon: Icon(Icons.clear),
+                          onPressed: () {
+                            input.clear();
+                            setState(() {
                               buscar("");
-                              input.clear();
-                            }
-                          : () {})
+                              mostrarBusqueda = true;
+                            });
+                          })
                 ]),
               ),
             ),
