@@ -4,9 +4,12 @@ import 'package:conf_elect_app/elemento.dart';
 import 'package:conf_elect_app/leyenda.dart';
 import 'package:conf_elect_app/lista_buscar.dart';
 import 'package:flutter/material.dart';
+import 'package:admob_flutter/admob_flutter.dart';
 
+//com.abc.conf_elect_app
 void main() {
   runApp(MyApp());
+  Admob.initialize();
 }
 
 class MyApp extends StatelessWidget {

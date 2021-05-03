@@ -1,3 +1,4 @@
+import 'package:admob_flutter/admob_flutter.dart';
 import 'package:conf_elect_app/models/elementos.dart';
 import 'package:conf_elect_app/elemento.dart';
 import 'package:conf_elect_app/second_route.dart';
@@ -69,15 +70,15 @@ class _ListaBuscarState extends State<ListaBuscar> {
       Elementos("54,94", "25", "Mn", "7,6,4,3,2", "MANGANESO", "celeste",
           "negro", "VII-B", "4", "d", "1s2 2s2 2p6 3s2 3p6 4s2 3d5"),
       Elementos("55,84", "26", "Fe", "6,3,2", "HIERRO", "celeste", "negro",
-          "VII-B", "4", "dss", "1s2 2s2 2p6 3s2 3p6 4s2 3d5"),
+          "VII-B", "4", "d", "1s2 2s2 2p6 3s2 3p6 4s2 3d6"),
       Elementos("58,93", "27", "Co", "4,3,2", "COBALTO", "celeste", "negro",
-          "VII-B", "4sssss", "dss", "1s2 2s2 2p6 3s2 3p6 4s2 3d5"),
+          "VII-B", "4", "d", "1s2 2s2 2p6 3s2 3p6 3d7 4s2"),
       Elementos("58,69", "28", "Ni", "2,3", "NIQUEL", "celeste", "negro",
-          "VII-B", "4sssss", "dss", "1s2 2s2 2p6 3s2 3p6 4s2 3d5"),
+          "VII-B", "4", "d", "1s2 2s2 2p6 3s2 3p6 3d8 4s2"),
       Elementos("63,55", "29", "Cu", "2,1", "COBRE", "celeste", "negro",
-          "VII-B", "4sssss", "dss", "1s2 2s2 2p6 3s2 3p6 4s2 3d5"),
+          "VII-B", "4", "d", "1s2 2s2 2p6 3s2 3p6 3d10 4s1"),
       Elementos("65,41", "30", "Zn", "2", "ZINC", "celeste", "negro", "VII-B",
-          "4sssss", "dss", "1s2 2s2 2p6 3s2 3p6 4s2 3d5"),
+          "4", "d", "1s2 2s2 2p6 3s2 3p6 3d10 4s2"),
       Elementos("69,72", "31", "Ga", "2,3", "GALIO", "celeste", "negro",
           "III-A", "4", "p", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p1"),
       Elementos("72,64", "32", "Ge", "±4,2", "GERMANIO", "naranja", "negro",
@@ -987,6 +988,13 @@ class _ListaBuscarState extends State<ListaBuscar> {
                     }),
               ),
             ),
+            Container(
+              color: Colors.green,
+              child: AdmobBanner(
+                adUnitId: "ca-app-pub-8398776666504336/8274638665",
+                adSize: AdmobBannerSize.FULL_BANNER,
+              ),
+            )
           ],
         ));
   }
