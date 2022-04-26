@@ -1,3 +1,4 @@
+import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
 import 'elemento.dart';
 
@@ -110,7 +111,14 @@ class ConfElect extends StatelessWidget {
           Expanded(
               child: ListView(
             children: [info, conf_elect],
-          ))
+          )),
+          Container(
+            color: Colors.green,
+            child: AdmobBanner(
+              adUnitId: "ca-app-pub-8398776666504336/8274638665",
+              adSize: AdmobBannerSize.SMART_BANNER(context),
+            ),
+          )
         ],
       ),
     );

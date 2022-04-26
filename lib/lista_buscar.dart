@@ -992,7 +992,7 @@ class _ListaBuscarState extends State<ListaBuscar> {
               color: Colors.green,
               child: AdmobBanner(
                 adUnitId: "ca-app-pub-8398776666504336/8274638665",
-                adSize: AdmobBannerSize.FULL_BANNER,
+                adSize: AdmobBannerSize.SMART_BANNER(context),
               ),
             )
           ],
